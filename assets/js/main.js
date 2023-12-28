@@ -88,7 +88,7 @@ function printProducts(products) {
                     }" class="products__button add_car">
                         <ion-icon name="add-outline" class="add_car"></ion-icon>
                     </button>
-                    <button data-id="${product.id}" data-description="${
+                    <button data-id="${product?.id}" data-description="${
       product?.description
     }" class="products__button products__button--search products__details" data-quantity="${
       product?.quantity
