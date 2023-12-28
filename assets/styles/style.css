@@ -207,6 +207,9 @@ body {
   transform: scale(1.1);
   filter: drop-shadow(5px 5px 4px #26262690);
 }
+.products__element button {
+  display: inline;
+}
 .products__button:hover {
   transform: scale(1.2);
   background-color: var(--red);
@@ -217,22 +220,11 @@ body {
   color: var(--grey);
   font-size: 14px;
 }
-.products__div {
-  display: flex;
-  gap: 5px;
-  margin: 10px 20px;
-  font-size: 18px;
-}
 .products__usd {
   color: var(--grey);
 }
 .products__price {
   color: var(--red);
-}
-.products__div--flex {
-  justify-content: flex-end;
-  gap: 20px;
-  margin-bottom: 20px;
 }
 .products__button {
   width: 40px;
@@ -279,7 +271,7 @@ body {
 }
 /* Clase muestra modal */
 .show__modal {
-  display: block;
+  display: flex;
 }
 /** Vista interna del modal */
 .modal__view {
@@ -418,11 +410,19 @@ h4:nth-child(6) {
   }
   .modal__view {
     padding: 20px 40px;
+    margin-top: 40px;
   }
+  .close {
+    position: absolute
+   }
 }
 @media screen and (max-width: 320px) {
 
  .header, .footer, .main__section {
   width: 347px;
  }
+ .nav__car h3 {
+  margin-left: 15px;
+ }
+ 
 }

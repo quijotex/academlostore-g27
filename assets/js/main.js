@@ -72,6 +72,7 @@ getProducts();
 function printProducts(products) {
   let html = "";
   for (let product of products) {
+    
     html += `
             <div class="products__element">
                 <img src="${
@@ -82,24 +83,23 @@ function printProducts(products) {
                     <p class="products__usd">USD: </p>
                     <p class="products__price">${product?.price.toFixed(2)}</p>
                 </div>
-                <div class="products__div products__div--flex">
-                    <button data-id="${
-                      product?.id
-                    }" class="products__button add_car">
+                
+                    <button data-id=${
+                      product?.id} class="products__button add_car">
                         <ion-icon name="add-outline" class="add_car"></ion-icon>
                     </button>
-                    <button data-id="${product?.id}" data-description="${
+                    <button data-id=${product?.id} data-description="${
       product?.description
     }" class="products__button products__button--search products__details" data-quantity="${
       product?.quantity
     }">
-                        <ion-icon name="search-outline"></ion-icon>
+                        <ion-icon name="search-outline" class="products__details"></ion-icon>
                     </button>
-                </div>
             </div>
         `;
   }
   productsList.innerHTML = html;
+  
 }
 
 //* Agregar los productos al carrito
@@ -117,13 +117,14 @@ function addProduct(event) {
 //* 2.1 Debo validar si el elemento seleccionado ya se encuentra dentro del array del carrito (carProducts). Si existe, le debo sumar una unidad para que no se repita.
 function carProductsElements(product) {
   const infoProduct = {
-    id: product.querySelector("button").getAttribute("data-id"),
-    image: product.querySelector("img")?.src,
-    name: product.querySelector("p")?.textContent,
-    price: product.querySelector(".products__div .products__price")?.textContent,
+    id: Number(product.querySelector("button").getAttribute("data-id")),
+    image: product?.querySelector("img")?.src,
+    name: product?.querySelector("p")?.textContent,
+    price: product?.querySelector(".products__div .products__price")?.textContent,
     quantity: 1,
     // textContent nos permite pedir el texto que contiene un elemento.
   };
+  
 
   //* Agregar el objeto de infoProduct al array de carProducts, pero hay que validar si el elemento existe o no.
   //? El primer if valída si por lo menos un elemento que se encuentre en carProducts es igual al que quiero enviarle en infoProduct.
