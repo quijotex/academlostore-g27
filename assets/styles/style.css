@@ -12,6 +12,7 @@
   --grey: #434343;
   --blue: #274671;
 }
+
 body {
   font-family: "Oswald", sans-serif;
 }
@@ -340,7 +341,8 @@ h4:nth-child(6) {
   font-size: 24px;
 }
 /* Media queries */
-@media screen and (max-width: 1360px) {
+
+@media screen and (max-width: 2560px) {
   .nav__car {
     width: 25%;
     left: 77%;
@@ -395,6 +397,7 @@ h4:nth-child(6) {
   }
 }
 @media screen and (max-width: 574px) {
+  
   .nav__car {
     width: 50%;
     left: 50%;
@@ -416,4 +419,10 @@ h4:nth-child(6) {
   .modal__view {
     padding: 20px 40px;
   }
+}
+@media screen and (max-width: 320px) {
+
+ .header, .footer, .main__section {
+  width: 347px;
+ }
 }

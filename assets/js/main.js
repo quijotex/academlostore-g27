@@ -58,7 +58,7 @@ function getProducts() {
   axios
     .get(baseUrl)
     .then((response) => {
-      const products = response.data;
+      const products = response?.data;
       printProducts(products);
     })
     .catch((error) => {
@@ -75,23 +75,23 @@ function printProducts(products) {
     html += `
             <div class="products__element">
                 <img src="${
-                  product.image
+                  product?.image
                 }" alt="product_img" class="products__img">
-                <p class="products__name">${product.name}</p>
+                <p class="products__name">${product?.name}</p>
                 <div class="products__div">
                     <p class="products__usd">USD: </p>
-                    <p class="products__price">${product.price.toFixed(2)}</p>
+                    <p class="products__price">${product?.price.toFixed(2)}</p>
                 </div>
                 <div class="products__div products__div--flex">
                     <button data-id="${
-                      product.id
+                      product?.id
                     }" class="products__button add_car">
                         <ion-icon name="add-outline" class="add_car"></ion-icon>
                     </button>
                     <button data-id="${product.id}" data-description="${
-      product.description
+      product?.description
     }" class="products__button products__button--search products__details" data-quantity="${
-      product.quantity
+      product?.quantity
     }">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
@@ -118,9 +118,9 @@ function addProduct(event) {
 function carProductsElements(product) {
   const infoProduct = {
     id: product.querySelector("button").getAttribute("data-id"),
-    image: product.querySelector("img").src,
-    name: product.querySelector("p").textContent,
-    price: product.querySelector(".products__div .products__price").textContent,
+    image: product.querySelector("img")?.src,
+    name: product.querySelector("p")?.textContent,
+    price: product.querySelector(".products__div .products__price")?.textContent,
     quantity: 1,
     // textContent nos permite pedir el texto que contiene un elemento.
   };
@@ -154,15 +154,15 @@ function carElementsHTML() {
     carHTML += `
         <div class="car__product">
             <div class="car__product__image">
-              <img src="${product.image}">
+              <img src="${product?.image}">
             </div>
             <div class="car__product__description">
-              <p>${product.name}</p>
-              <p>Precio: ${product.price}</p>
-              <p>Cantidad: ${product.quantity}</p>
+              <p>${product?.name}</p>
+              <p>Precio: ${product?.price}</p>
+              <p>Cantidad: ${product?.quantity}</p>
             </div>
             <div class="car__product__button">
-                <button class="delete__product" data-id="${product.id}">
+                <button class="delete__product" data-id="${product?.id}">
                     Delete
                 </button>
             </div>
