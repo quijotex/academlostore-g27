@@ -1,0 +1,86 @@
+{ "products" : [ 
+    {
+        "id": 1,
+        "name": "Zelda: Breath of the Wild",
+        "description": "No kingdom. No memories. After a 100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore a vast and dangerous land and regain his memories before Hyrule is lost forever.",
+        "price": 250.000,
+        "quantity": 5,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705451335/Videogames/wztcp3ugmxrrfqozxwow.webp"
+
+    },
+    {
+        "id": 2,
+        "name": "Riders Public",
+        "description": "Jump into a massive multiplayer playground! Bike, ski, snowboard, or wingsuit across an open world sports paradise.",
+        "price": 200.000 ,
+        "quantity": 2,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452168/Videogames/ntngjqvvcsanxyjp0jpy.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mortal Kombat 2",
+        "description": "Mortal Kombat is back and better than ever in the next evolution of the iconic franchise.",
+        "price": 150.000 ,
+        "quantity": 3,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452168/Videogames/rt3crlnvtommfh6a4arw.webp"
+    },
+    {
+        "id": 4,
+        "name": "Spider-Man: Miles Morales",
+        "description": "After the events of Marvels Spider-Man Remastered, teenage Miles Morales is adjusting to his new home while following in the footsteps of his mentor, Peter Parker, as a new Spider-Man. When a fierce power struggle threatens to destroy his home, Miles must take up the mantle of Spider-Man and own it",
+        "price": 120.000 ,
+        "quantity": 4,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452168/Videogames/q7jrkoepwxw2i6qhkkfg.webp"
+    },
+    {
+        "id": 5,
+        "name": "Guardians of the Galaxy",
+        "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.",
+        "price": 100.000 ,
+        "quantity": 1,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452168/Videogames/uxvz1wsbfhlfivcg8c9q.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Inmortals Fenyx Rising",
+        "description": "Immortals Fenyx Rising brings grand mythological adventure to life. Play as Fenyx on a quest to save the Greek gods.",
+        "price": 130.000,
+        "quantity": 6,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452168/Videogames/koabwzvbo95mz1ycw9ow.jpg"
+
+    },
+    {
+        "id": 7,
+        "name": "Wonderlands",
+        "description": "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Roll your own multiclass hero then shoot, loot, slash, and cast on a quest to stop the Dragon Lord.",
+        "price": 110.000 ,
+        "quantity": 2,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452167/Videogames/h1jyj6zfv0hhqe5wa55j.jpg"
+    },
+    {
+        "id": 8,
+        "name": "NBA",
+        "description": "Experience hoops culture in NBA 2K24. Enjoy loads of action and limitless personalized MyPLAYER options in MyCAREER. Build your perfect lineup in MyTEAM. Feel more responsive gameplay and polished visuals while playing with your favorite NBA and WNBA teams in PLAY NOW.",
+        "price": 200.000 ,
+        "quantity": 4,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452167/Videogames/zncdzzbsc3py85fd0iyj.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Godfall",
+        "description": "The popular dungeon-crawling RPG series returns! Take your party into procedurally-generated dungeons, fight in turn-based battles, loot and level up! Explore the land and uncover the mysteries of the Godfall!",
+        "price": 110.000 ,
+        "quantity": 3,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452167/Videogames/pt40remtyvm8elqad6ck.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Forza Motorsport",
+        "description": "Out-build the competition in the all-new career. Race your friends in adjudicated multiplayer events. Compete in over 500 cars on world-famous tracks with cutting edge AI, advanced physics, and tire and fuel strategy.",
+        "price": 80.000 ,
+        "quantity": 7,
+        "image" : "https://res.cloudinary.com/dzrzn9gg3/image/upload/c_pad,w_290,h_290,ar_1:1/v1705452167/Videogames/vrvzdphsh7j5ugcbutlo.jpg"
+    }
+]
+}
+
